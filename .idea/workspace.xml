@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8cdd292f-fc8a-4dde-bbf7-c0f8d160b211" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/Cellar/go/1.13.4/libexec" />
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="qozoOeFd" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1TiOVBJB3EGkHtwdGblpUxn3VUy" />
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Go" />
+  </component>
+  <component name="PsiViewer.ProjectComponent">
+    <option name="HIGHLIGHT" value="false" />
+    <option name="FILTER_WHITESPACE" value="false" />
+    <option name="SHOW_PROPERTIES" value="true" />
+    <option name="SPLIT_DIVIDER_POSITION" value="300" />
+    <option name="AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="AUTOSCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sql/token" />
+      <recent name="$PROJECT_DIR$/sql/dml" />
+      <recent name="$PROJECT_DIR$/sql/ddl" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Go Test.TestTokenize in github.com/djbckr/godb/sql/token">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="go build godb.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="godb" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/godb.go" />
+      <package value="github.com/djbckr/godb" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestParse in github.com/djbckr/godb/sql" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="godb" />
+      <working_directory value="$PROJECT_DIR$/sql" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/djbckr/godb/sql" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^TestParse$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestTokenize in github.com/djbckr/godb/sql/token" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="godb" />
+      <working_directory value="$PROJECT_DIR$/sql/token" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/djbckr/godb/sql/token" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^TestTokenize$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestTokenize in github.com/djbckr/godb/sql/token" />
+        <item itemvalue="Go Test.TestParse in github.com/djbckr/godb/sql" />
+        <item itemvalue="Go Build.go build godb.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8cdd292f-fc8a-4dde-bbf7-c0f8d160b211" name="Default" comment="" />
+      <created>1514088712174</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1514088712174</updated>
+      <workItem from="1514088713477" duration="609000" />
+      <workItem from="1514398972814" duration="74000" />
+      <workItem from="1514417642835" duration="326000" />
+      <workItem from="1514482630287" duration="5000" />
+      <workItem from="1565047406875" duration="1553000" />
+      <workItem from="1565063393300" duration="2445000" />
+      <workItem from="1565110236627" duration="444000" />
+      <workItem from="1565389320913" duration="7021000" />
+      <workItem from="1565542313694" duration="872000" />
+      <workItem from="1565543249267" duration="5691000" />
+      <workItem from="1565624790408" duration="300000" />
+      <workItem from="1565651817879" duration="469000" />
+      <workItem from="1565666833777" duration="80000" />
+      <workItem from="1565667022103" duration="1834000" />
+      <workItem from="1565714508439" duration="228000" />
+      <workItem from="1565723277312" duration="5533000" />
+      <workItem from="1565750796645" duration="6739000" />
+      <workItem from="1565799692344" duration="1175000" />
+      <workItem from="1565825844964" duration="746000" />
+      <workItem from="1565826741091" duration="973000" />
+      <workItem from="1565830469482" duration="608000" />
+      <workItem from="1565885731325" duration="48000" />
+      <workItem from="1565897552560" duration="258000" />
+      <workItem from="1573939472576" duration="1213000" />
+      <workItem from="1574036701005" duration="137000" />
+      <workItem from="1574092685394" duration="12000" />
+      <workItem from="1574975734834" duration="11390000" />
+      <workItem from="1575077942382" duration="4249000" />
+      <workItem from="1575082614866" duration="439000" />
+      <workItem from="1575086616071" duration="2477000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

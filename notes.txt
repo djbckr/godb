@@ -1,0 +1,32 @@
+
+Start executable - first time startup has no init-file, so the database is not opened
+
+This user must issue a CREATE DATABASE command
+
+CREATE DATABASE databasename
+  initparams(
+      'ctrlFile=/path/to/ctrlfile1',
+      'ctrlFile=/path/to/ctrlfile2',
+      'maxSessions=100',
+      'serverPort=9422',
+      'keyFile=/path/to/keyFile',
+      'certFile=/path/to/certfile',
+  )
+  user sys identified by 'password'
+  database_logging_clauses
+  tablespace_clauses
+
+database_logging_clauses:
+logfile group 1 ('/path/to/logfile1a','/path/to/logfile1b') size 1G,
+        group 2 (...)
+OR
+logfile '/path/to/logfile1' size 1g, '/path/to/logfile2' size 1g
+
+tablespace_clauses:
+datafile '/path/to/datafile' size 1g autoextend on next 1g maxsize 10g
+default tablespace usertblspc datafile ...
+default temp tablespace temptblspc ...
+undo tablespace undo datafile ...
+
+This creates the initial database with the init-file, sys user with specified password, redo-log files, system tablespace, user tablespace, temp tablespace, and undo tablespace.
+
