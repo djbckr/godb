@@ -1,5 +1,10 @@
 package dml
 
+import (
+	"fmt"
+	"github.com/djbckr/godb/sql/token"
+)
+
 /*
 https://docs.oracle.com/cd/E11882_01/server.112/e41084/statements_10002.htm
 
@@ -160,14 +165,39 @@ FOR UPDATE
     }
   ]
 
-
-
-
-
-
-
 */
 
-func ProcessSelect(sql []string) {
+type Query struct {
+	QueryBlock []*TQueryBlock
+}
 
+type TSetOperator = int
+
+const (
+	NONE TSetOperator = iota
+	UNION
+	UNION_ALL
+	INTERSECT
+	MINUS
+)
+
+type TQueryBlock struct {
+	SetOperator TSetOperator
+	From        TFrom
+	Select      TSelect
+}
+
+type TFrom struct {
+}
+
+type TSelect struct {
+}
+
+func ProcessSelect(sql token.Tokens) {
+	var vv interface{}
+
+	for idx, tkn := range sql {
+		vv = tkn.Value
+		fmt.Printf("%v, %t   ::   %v    ::    %v\n", idx, vv, vv, tkn.TokenType)
+	}
 }
