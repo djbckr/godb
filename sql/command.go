@@ -1,6 +1,9 @@
 package sql
 
-import "github.com/djbckr/godb/sql/dml"
+import (
+	"github.com/djbckr/godb/sql/dml"
+	"github.com/djbckr/godb/sql/token"
+)
 
 type Command struct {
 }
@@ -454,9 +457,9 @@ const (
 	verbose_      = "VERBOSE"
 )
 
-func doCommand(cmd []string) (*Command, error) {
+func doCommand(cmd token.Tokens) (*Command, error) {
 
-	switch cmd[0] {
+	switch firstToken(cmd) {
 
 	case select_, with_, from_:
 		dml.ProcessSelect(cmd)
@@ -499,4 +502,13 @@ func doCommand(cmd []string) (*Command, error) {
 
 
 	return nil, nil
+}
+
+func firstToken(cmd token.Tokens) string {
+	for _, token := range cmd {
+		if token.TokenType == token.TypeToken {
+			return token.Value.(string)
+		}
+	}
+	return ""
 }

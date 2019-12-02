@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cdd292f-fc8a-4dde-bbf7-c0f8d160b211" name="Default" comment="add git ignore">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/dml/select_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/dbecker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/dbecker.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/dml/select.go" beforeDir="false" afterPath="$PROJECT_DIR$/sql/dml/select.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/command.go" beforeDir="false" afterPath="$PROJECT_DIR$/sql/command.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/parser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/sql.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/sql_test.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/token/token_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sql/token/token_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/token/tokenizer.go" beforeDir="false" afterPath="$PROJECT_DIR$/sql/token/tokenizer.go" afterDir="false" />
     </list>
@@ -48,7 +49,7 @@
     <property name="GO_FMT" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="true" />
+    <property name="add_unversioned_files" value="true&#10;/Users/dbecker/Development/goprojects/src/github.com/djbckr/godb/.idea/vcs.xml" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -83,7 +84,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestProcessSelect in github.com/djbckr/godb/sql/dml">
+  <component name="RunManager" selected="Go Test.TestTokenize in github.com/djbckr/godb/sql/token">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -166,8 +167,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestProcessSelect in github.com/djbckr/godb/sql/dml" />
         <item itemvalue="Go Test.TestTokenize in github.com/djbckr/godb/sql/token" />
+        <item itemvalue="Go Test.TestProcessSelect in github.com/djbckr/godb/sql/dml" />
         <item itemvalue="Go Test.TestParse in github.com/djbckr/godb/sql" />
         <item itemvalue="Go Build.go build godb.go" />
       </list>
@@ -219,7 +220,10 @@
       <workItem from="1575157176403" duration="8688000" />
       <workItem from="1575168429511" duration="168000" />
       <workItem from="1575169315993" duration="3595000" />
-      <workItem from="1575213386405" duration="92000" />
+      <workItem from="1575213386405" duration="1456000" />
+      <workItem from="1575218117528" duration="2488000" />
+      <workItem from="1575240495129" duration="7505000" />
+      <workItem from="1575250733091" duration="7586000" />
     </task>
     <task id="LOCAL-00001" summary="add git ignore">
       <created>1575089703920</created>
@@ -250,22 +254,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add git ignore" />
     <option name="LAST_COMMIT_MESSAGE" value="add git ignore" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/sql/token/token_test.go</url>
-          <line>55</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/sql/token/tokenizer.go</url>
-          <line>309</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>

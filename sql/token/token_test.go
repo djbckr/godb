@@ -44,6 +44,7 @@ func TestTokenize(t *testing.T) {
 	}
 
 	check(t, p,
+		Token{" this is a comment ", TypeComment},
 		Token{"SELECT", TypeToken},
 		Token{"issue", TypeToken},
 		Token{"FROM", TypeToken},
@@ -61,6 +62,7 @@ func TestTokenize(t *testing.T) {
 
 	n, _, _ := big.NewFloat(0).Parse("1e7", 0)
 	check(t, p,
+		Token{" this is a comment ", TypeComment},
 		Token{"SELECT", TypeToken},
 		Token{"issue", TypeToken},
 		Token{"FROM", TypeToken},
@@ -71,13 +73,14 @@ func TestTokenize(t *testing.T) {
 		Token{n, TypeNumber})
 
 	p, e = Tokenize(`  -- single line comment
-alter table "schema"."tbål" add column (colname number, colx string) `)
+alter table "schema"."tbål" add column (colname Number, colx string) `)
 
 	if e != nil {
 		t.Error(e)
 	}
 
 	check(t, p,
+		Token{" single line comment", TypeComment},
 		Token{"ALTER", TypeToken},
 		Token{"TABLE", TypeToken},
 		Token{"schema", TypeToken},
@@ -128,11 +131,10 @@ $$`)
 
 	p, e = Tokenize("`This is a test string`")
 
-	if e != nil {
+	if e == nil || e.Error() != "Invalid SQL text found near: `This is a test string`" {
 		t.Error(e)
 	}
 
-	check(t, p, Token{"This is a test string", TypeString})
 
 	p, e = Tokenize(`$$$$`)
 
@@ -160,7 +162,7 @@ $$`)
 
 
 	p, e = Tokenize(`create table [foo$$]
-(col1 number, col2 varchar(33, 23))
+(col1 Number, col2 varchar(33, 23))
 `)
 
 	if e != nil {
