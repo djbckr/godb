@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cdd292f-fc8a-4dde-bbf7-c0f8d160b211" name="Default" comment="add git ignore">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/dbecker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/dbecker.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/antlr/Hello.g4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/command.go" beforeDir="false" afterPath="$PROJECT_DIR$/sql/command.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/parser.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/sql.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/sql_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/token/token_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sql/token/token_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/token/tokenizer.go" beforeDir="false" afterPath="$PROJECT_DIR$/sql/token/tokenizer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/dml/select.go" beforeDir="false" afterPath="$PROJECT_DIR$/sql/dml/select.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +40,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -55,7 +51,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Go" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="PsiViewer.ProjectComponent">
     <option name="HIGHLIGHT" value="false" />
@@ -224,6 +220,12 @@
       <workItem from="1575218117528" duration="2488000" />
       <workItem from="1575240495129" duration="7505000" />
       <workItem from="1575250733091" duration="7586000" />
+      <workItem from="1575307024854" duration="1694000" />
+      <workItem from="1575328144514" duration="373000" />
+      <workItem from="1575328963126" duration="879000" />
+      <workItem from="1575330582956" duration="90000" />
+      <workItem from="1575330689405" duration="69000" />
+      <workItem from="1575333044641" duration="378000" />
     </task>
     <task id="LOCAL-00001" summary="add git ignore">
       <created>1575089703920</created>

@@ -181,16 +181,45 @@ const (
 	MINUS
 )
 
+type TJoinType = int
+
+const (
+	JOIN_INNER TJoinType = iota
+	JOIN_INNER_CROSS
+	JOIN_INNER_NATURAL
+	JOIN_OUTER_LEFT
+	JOIN_OUTER_RIGHT
+	JOIN_OUTER_FULL
+)
+
 type TQueryBlock struct {
 	SetOperator TSetOperator
-	From        TFrom
-	Select      TSelect
+	From        []*TFrom
+	Select      []*TSelect
+	Where       []*TWhere
+	GroupBy     []*TGroupBy
 }
 
 type TFrom struct {
+	JoinType TJoinType
+	TableRef *TTableRef
+	On       []*TCondition
 }
 
 type TSelect struct {
+}
+
+type TCondition struct {
+}
+
+type TTableRef struct {
+}
+
+type TWhere struct {
+
+}
+
+type TGroupBy struct {
 }
 
 func ProcessSelect(sql token.Tokens) {
