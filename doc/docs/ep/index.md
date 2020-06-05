@@ -98,7 +98,7 @@ The server will respond to the above with a `message` section:
 
 There is no need for a `meta` or `data` in either the request or response.
 
-### Run a Query ###
+### EXAMPLE: Run a Query ###
 * JSON
 ```
 {

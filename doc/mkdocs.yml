@@ -9,3 +9,4 @@ nav:
     - DML: sql/dml.md
     - DDL: sql/ddl.md
   - Error Codes: err/index.md
+theme: readthedocs

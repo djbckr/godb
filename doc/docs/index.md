@@ -12,20 +12,17 @@ If using keep-alive connections, it is valid to have various session/auth tokens
 keep-alive does is reduce connection and handshake overhead (which can be substantial).
 
 The server will respond with the following possible HTTP response codes:
-* 200 OK - The call completed successfuly with no errors.
-* 400 Bad Request - This is typically in response to invalid SQL.
-The response body will contain a message indicating what the problem might be.
-* 401 Unauthorized - This response means that the user needs to login, either because they never logged-in, their session
-expired, or their session was terminated by an administrator. Or if logging in, an invalid login combination was specified.
-* 403 Forbidden - This means that the user tried to access a resource (table, view, etc) that they are not allowed to access.
-* 404 Not Found - A request to a non-existent end-point.
-* 405 Method not allowed - Example: A GET operation was requested, but the endpoint only allows PUT/POST. 
-* 409 Conflict - More than one /sql request was made on the same SessionID. This is not allowed.
-* 415 Unsupported Media Type - GoDB currently only supports application/json and application/XML media types.
-* 422 Unprocessable Entity - The content of the request body expected certain data, but it was not there.
-The response body will contain a message indicating what the problem might be.
-* 500 Internal Server Error - this will happen when GoDB has an internal error.
-The response body should contain a message indicating what the problem might be.
+
+- 200 OK - The call completed successfuly with no errors.
+- 400 Bad Request - This is typically in response to invalid SQL. The response body will contain a message indicating what the problem might be.
+- 401 Unauthorized - This response means that the user needs to login, either because they never logged-in, their session expired, or their session was terminated by an administrator. Or if logging in, an invalid login combination was specified.
+- 403 Forbidden - This means that the user tried to access a resource (table, view, etc) that they are not allowed to access.
+- 404 Not Found - A request to a non-existent end-point.
+- 405 Method not allowed - Example: A GET operation was requested, but the endpoint only allows PUT/POST. 
+- 409 Conflict - More than one /sql request was made on the same SessionID. This is not allowed.
+- 415 Unsupported Media Type - GoDB currently only supports application/json and application/XML media types.
+- 422 Unprocessable Entity - The content of the request body expected certain data, but it was not there. The response body will contain a message indicating what the problem might be.
+- 500 Internal Server Error - this will happen when GoDB has an internal error. The response body should contain a message indicating what the problem might be.
 
 In addition to the above HTTP response codes, the server will always respond with `code` and `message` element/attribute.
 You can look up the error codes [here](err/index.md)

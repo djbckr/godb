@@ -1,7 +1,8 @@
 # Transaction Control #
 
 GoDB provides very flexible transaction control. Using the `Trx-xxx` headers allows you to embed transaction control
-into /sql calls, but you can just as easily run separate SQL transaction statements if you find it easier to understand.
+into /sql calls, but you can just as easily run separate SQL transaction statements if you find it easier to
+understand.
 
 A common mistake is to commit after every operation. This is not only wasteful (uses more database resources to commit
 and start many small transactions rather than fewer large ones), but circumvents the idea of keeping related operations
@@ -61,3 +62,13 @@ If there is an error, the transaction is _not_ committed. If the `Trx-Rollback` 
 the client must decide what to do.
 
 If a commit is issued but there is no active transaction, nothing happens.
+
+## Notes ##
+You may provide several transaction control headers in one call to avoid round-trip calls to the server. The most
+common combinations would be `Trx-Rollback` and `Trx-Commit`. Say you are updating 100 rows in a table. You can
+issue a single call of SQL: `UPDATE my_table SET my_column = :v1 WHERE pk_column = :v2`. By using 100 data elements
+of :v1 and :v2, GoDB will execute that statement 100 times. If there is an error, GoDB will rollback the transaction
+and report which iteration and value caused the problem. If all 100 rows are updated, GoDB will commit the transaction
+and return a code of 0 with a success message. It is not neccessary to provide a `Trx-Start` header, as an UPDATE
+statement automatically starts a transaction for you. However, if you wish to have a SERIALIZABE transaction,
+you must provide the header.
